@@ -7,12 +7,8 @@ class PerfectMaze(object):
     """ Class for generating and solving a N-by-N perfect maze
     This class generates a perfect maze by using union find. The maze
     can be visualized, as well as the commitor, and can be solved
-<<<<<<< HEAD
     using recursive tree search. The states are enumarated from 0 to
     N^2-1.
-=======
-    using recursive tree search. 
->>>>>>> fd4fd2e3253b7884f7f12f80d250816dceb5a29a
     
     Parameters:
     
@@ -68,11 +64,7 @@ class PerfectMaze(object):
             Prints the maze
             
             Parameters:
-<<<<<<< HEAD
                 wait: (bool) if True, plt.show() is not called by method
-=======
-                wait: (bool) if True, the program stops until enter is hit
->>>>>>> fd4fd2e3253b7884f7f12f80d250816dceb5a29a
                 labels: (bool) if True, walls will be labeled with respective number
                 committor: (ndarray) color plot of commitor in maze
                 
@@ -206,11 +198,7 @@ class PerfectMaze(object):
         
         # recursively find path
         path = self.__path_search(row, col, start, end, start)
-<<<<<<< HEAD
         self.visualize(wait=True)
-=======
-        self.visualize()
->>>>>>> fd4fd2e3253b7884f7f12f80d250816dceb5a29a
         
         # plot path
         for i in range(len(path)-1):
@@ -303,12 +291,6 @@ class PerfectMaze(object):
             print("sets:")
             print(self.__sets)
         
-<<<<<<< HEAD
-=======
-        if wait:
-            wait = input("Press Enter")
-        
->>>>>>> fd4fd2e3253b7884f7f12f80d250816dceb5a29a
         fig.axes[0].set_aspect("equal")
         if committor is not None:
             com = np.zeros([self.N, self.N])
@@ -328,13 +310,8 @@ class PerfectMaze(object):
             plt.pcolor(x, y, com)
             plt.colorbar()
         
-<<<<<<< HEAD
-        if not wait:
-            plt.show()
-=======
-        plt.show()
->>>>>>> fd4fd2e3253b7884f7f12f80d250816dceb5a29a
- 
+       if not wait:
+            plt.show() 
 
     # method to remove a list 
     def __removearray(self, L,arr):
