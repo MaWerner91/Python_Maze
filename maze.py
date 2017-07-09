@@ -310,7 +310,7 @@ class PerfectMaze(object):
             plt.pcolor(x, y, com)
             plt.colorbar()
         
-       if not wait:
+        if not wait:
             plt.show() 
 
     # method to remove a list 
