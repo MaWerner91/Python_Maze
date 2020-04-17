@@ -309,11 +309,14 @@ class PerfectMaze():
             return -1
 
         for c in col[np.where(row == start)[0]]:
+            # don't go backwards
             if c != parent:
+                # find path to end from child
                 p = self.__path_search(row, col, c, end, start)
                 if p != -1:
                     p.append(start)
                     return p
+        # no path found
         return -1
 
 
