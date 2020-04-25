@@ -294,7 +294,7 @@ class PerfectMaze():
             y[:, self.N] = y[:self.N, :self.N].max()+1
             x[:, self.N] = x[:, self.N-1]
             y[self.N, :] = y[self.N-1, :]
-            plt.pcolor(x, y, com)
+            plt.pcolor(x, y, com, cmap="plasma")
             plt.colorbar()
 
         if not wait:
