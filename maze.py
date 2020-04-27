@@ -177,7 +177,7 @@ class PerfectMaze():
         self.T = sp.coo_matrix((data, (row, col)), shape=(N**2, N**2))
 
     def show_path(self, start, end):
-        """ show path between start and end """
+        """ show path between start and end, compute path with DFS """
 
         # remove diagonal elements from transition matrix
         row, col = self.T.nonzero()
