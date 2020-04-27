@@ -91,6 +91,7 @@ class PerfectMaze():
         wvc = 0
 
         # remove walls and join __sets
+        # run Kruskal's algorithm
         while len(self.__sets) > 1:
             # states that will be connected
             c1 = 0
